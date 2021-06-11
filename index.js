@@ -1,47 +1,42 @@
-const [targetLanguage, keyword] = process.args.slice(2);
+const [targetLanguage, keyword] = process.argv.slice(2);
 
 function calculateToken(text) {
-  const [firstSeed, secondSeed] = [440498, 1287591069];
+  let [firstSeed, secondSeed] = [440498, 1287591069];
 
   const d = Buffer.from(text, "utf8");
 
-  for (const value in d) {
-    firstSeed += value;
-    firstSeed = workToken(firstSeed, "+-a^+6");
+  let a = firstSeed;
+  for (const value of d) {
+    a += value;
+    a = workToken(a, "+-a^+6");
   }
 
-  firstSeed = workToken(firstSeed, "+-3^+b+-f");
-  firstSeed ^= secondSeed;
+  a = workToken(a, "+-3^+b+-f");
+  a ^= secondSeed;
 
-  if (0 > firstSeed) {
-    firstSeed = (firstSeed & 2147483647) + 2147483648;
+  if (0 > a) {
+    a = (a & 2147483647) + 2147483648;
   }
 
-  firstSeed %= 1e6;
-  firstSeed = parseInt(firstSeed);
+  a %= 1e6;
+  a = parseInt(a);
 
-  let tmpChar = (firstSeed ^ parseInt(firstSeed)).toString();
-  return firstSeed.toString() + "." + tmpChar;
+  return `${a}.${a ^ parseInt(firstSeed)}`;
 }
 
 function workToken(firstSeed, seed) {
   for (let i = 0; i < seed.length - 2; i += 3) {
     let char = seed.charAt[i + 2];
-    let tmpChar = parseInt(char[0], 16);
-    let d;
-
-    if (tmpChar >= parseInt("a", 16)) {
-      d = parseInt(char[0], 16);
-    }
+    let d = parseInt(char, 16);
 
     if (seed.charAt[i + 1] === "+") {
-      d = firstSeed >>> b;
+      d = firstSeed >>> d;
     } else {
-      d = firstSeed << b;
+      d = firstSeed << d;
     }
 
     if (seed.charAt[i] == "+") {
-      firstSeed += d;
+      firstSeed = firstSeed + d >> 0;
     } else {
       firstSeed ^= d;
     }
