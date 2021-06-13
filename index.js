@@ -1,4 +1,6 @@
-const [targetLanguage, keyword] = process.argv.slice(2);
+const axios = require("axios").default;
+const HttpsProxyAgent = require("https-proxy-agent");
+const [targetLanguage, queryString] = process.argv.slice(2);
 
 let result = "";
 
@@ -13,7 +15,8 @@ function getSynonym(result, resp, queryString) {
     for (const x of resp[1]) {
       result += `# ${x[0][0]}.\n`;
       for (const y of x[2]) {
-        result += `${y[0]}: ${", ".concat(y[1])}\n`;
+        console.log("getSynonym:", y[1]);
+        // result += `${y[0]}: ${", ".concat(y[1])}\n`;
       }
     }
   }
@@ -39,6 +42,49 @@ function getDefinition(result, resp, queryString) {
   }
   return result;
 }
+
+function getExamples(result, resp, queryString) {
+  result = result.concat("\n=========\n", `0_0: Examples of ${queryString}\n`);
+  for (const x of resp[13][0]) {
+    result += `  * ${x[0]}\n`;
+  }
+  return result;
+}
+
+function getSynonymEn(result, resp, queryString) {
+  result = result.concat("\n=========\n", `0_0: Synonyms of ${queryString}\n`);
+  for (const x of resp[11]) {
+    result += `# ${x[0]}.\n`;
+    for (const y of x[1]) {
+      console.log("getSynonymEn:", y);
+      // result += `", ".concat`
+    }
+  }
+}
+
+function getResp(url) {
+  return axios.get(url, {
+    headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" },
+    httpsAgent: new HttpsProxyAgent("http://localhost:7890"),
+  });
+}
+
+async function getTranslation(targetLanguage, queryString) {
+  const tk = calculateToken(queryString);
+  const url = getUrl(targetLanguage, queryString, tk);
+  try {
+    const resp = await getResp(url);
+    console.log(resp);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+function Main() {
+  console.log(getTranslation(targetLanguage, queryString));
+}
+
+Main();
 
 function calculateToken(text) {
   let [firstSeed, secondSeed] = [440498, 1287591069];
