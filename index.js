@@ -74,7 +74,10 @@ async function getTranslation(targetLanguage, queryString) {
   const url = getUrl(targetLanguage, queryString, tk);
   try {
     const resp = await getResp(url);
-    console.log(resp);
+    console.log(resp.data);
+    getResult(result, resp.data);
+    getSynonym(result, resp.data, queryString);
+
   } catch (error) {
     console.log(error);
   }
@@ -112,16 +115,16 @@ function calculateToken(text) {
 
 function workToken(firstSeed, seed) {
   for (let i = 0; i < seed.length - 2; i += 3) {
-    let char = seed.charAt[i + 2];
+    let char = seed[i + 2];
     let d = parseInt(char, 16);
-
-    if (seed.charAt[i + 1] === "+") {
+ 
+    if (seed[i + 1] === "+") {
       d = firstSeed >>> d;
     } else {
       d = firstSeed << d;
     }
 
-    if (seed.charAt[i] == "+") {
+    if (seed[i] === "+") {
       firstSeed = (firstSeed + d) >> 0;
     } else {
       firstSeed ^= d;
