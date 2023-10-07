@@ -4,25 +4,25 @@ const [targetLanguage, queryString] = process.argv.slice(2);
 
 let result = [];
 
-function getUrl(tl, qry, tk) {
-  const url = `https://translate.google.com/translate_a/single?client=webapp&sl=auto&tl=${tl}&hl=en&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=sos&dt=ss&dt=t&ssel=0&tsel=0&kc=1&tk=${tk}&q=${qry}`;
+function getUrl(targetLanguage, query, token) {
+  const url = `https://translate.google.com/translate_a/single?client=webapp&sl=auto&tl=${targetLanguage}&hl=en&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=sos&dt=ss&dt=t&ssel=0&tsel=0&kc=1&tk=${token}&q=${encodeURIComponent(query)}`;
   return url;
 }
 
-function getResult(result, resp) {
+function getResult(result, response) {
   result[0] = "";
-  for (const x of resp[0]) {
+  for (const x of response[0]) {
     if (x[0]) {
       result[0] += x[0];
     }
   }
 }
 
-function getSynonym(result, resp, queryString) {
+function getSynonym(result, response, queryString) {
   result[1] = "";
-  if (resp[1]) {
+  if (response[1]) {
     result[1] = result[1].concat("\n=========\n", `0_0: Translations of ${queryString}\n`);
-    for (const x of resp[1]) {
+    for (const x of response[1]) {
       result[1] += `# ${x[0][0]}.\n`;
       for (const y of x[2]) {
         result[1] += `${y[0]}: ${y[1].join(", ")}\n`;
@@ -61,7 +61,7 @@ function getExamples(result, resp, queryString) {
 function getResp(url) {
   return axios.get(url, {
     headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" },
-    httpsAgent: new HttpsProxyAgent("http://localhost:7890"),
+    // httpsAgent: new HttpsProxyAgent("http://localhost:7890"),
   });
 }
 
@@ -84,23 +84,23 @@ function resultToHtml(result) {
 }
 
 async function getTranslation(targetLanguage, queryString) {
-  const tk = calculateToken(queryString);
-  const url = getUrl(targetLanguage, queryString, tk);
+  const token = calculateToken(queryString);
+  const url = getUrl(targetLanguage, queryString, token);
   try {
-    const resp = await getResp(url);
-    getResult(result, resp.data);
-    getSynonym(result, resp.data, queryString);
+    const { data } = await getResp(url);
+    getResult(result, data);
+    getSynonym(result, data, queryString);
 
-    if (resp.data[11]) {
-      getSynonymEn(result, resp.data, queryString);
+    if (data[11]) {
+      getSynonymEn(result, data, queryString);
     }
 
-    if (resp.data[12]) {
-      getDefinition(result, resp.data, queryString);
+    if (data[12]) {
+      getDefinition(result, data, queryString);
     }
 
-    if (resp.data[13]) {
-      getExamples(result, resp.data, queryString);
+    if (data[13]) {
+      getExamples(result, data, queryString);
     }
     resultToHtml(result);
   } catch (error) {

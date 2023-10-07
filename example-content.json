@@ -1,0 +1,776 @@
+[
+  [
+    [
+      "火",
+      "fire",
+      null,
+      null,
+      10
+    ],
+    [
+      null,
+      null,
+      "Huǒ",
+      "ˈfī(ə)r"
+    ]
+  ],
+  [
+    [
+      "noun",
+      null,
+      [
+        [
+          "火",
+          [
+            "fire",
+            "anger",
+            "temper"
+          ],
+          null,
+          0.19691168
+        ],
+        [
+          "炉火",
+          [
+            "fire",
+            "ingle"
+          ],
+          null,
+          0.002943591
+        ],
+        [
+          "炉",
+          [
+            "furnace",
+            "oven",
+            "stove",
+            "hearth",
+            "fire",
+            "grate on the ear"
+          ],
+          null,
+          3.3546262E-4
+        ],
+        [
+          "炉子",
+          [
+            "stove",
+            "fire"
+          ],
+          null,
+          1.4886064E-4
+        ],
+        [
+          "炬",
+          [
+            "torch",
+            "fire"
+          ],
+          null,
+          4.0065297E-5
+        ],
+        [
+          "烽火",
+          [
+            "war",
+            "beacon",
+            "fire",
+            "bonfire",
+            "needfire"
+          ],
+          null,
+          3.169426E-5
+        ],
+        [
+          "燧",
+          [
+            "flint",
+            "fire",
+            "beacon fire",
+            "speculum"
+          ],
+          null,
+          1.0130094E-5
+        ],
+        [
+          "烽",
+          [
+            "war",
+            "bonfire",
+            "fire"
+          ],
+          null,
+          2.7694134E-6
+        ],
+        [
+          "煚",
+          [
+            "fire"
+          ],
+          null,
+          1.8448271E-6
+        ],
+        [
+          "爓",
+          [
+            "fire"
+          ],
+          null,
+          1.8448271E-6
+        ]
+      ],
+      "fire",
+      1
+    ],
+    [
+      "verb",
+      null,
+      [
+        [
+          "解雇",
+          [
+            "fire",
+            "dismiss",
+            "sack",
+            "discharge",
+            "cashier"
+          ],
+          null,
+          0.041274928
+        ],
+        [
+          "发射",
+          [
+            "transmit",
+            "launch",
+            "emit",
+            "fire",
+            "discharge",
+            "project"
+          ],
+          null,
+          0.03758125
+        ],
+        [
+          "射击",
+          [
+            "fire",
+            "shoot",
+            "pop"
+          ],
+          null,
+          0.024646387
+        ],
+        [
+          "开除",
+          [
+            "fire",
+            "expel",
+            "discharge",
+            "sack",
+            "except"
+          ],
+          null,
+          0.011642128
+        ],
+        [
+          "射",
+          [
+            "shoot",
+            "fire",
+            "discharge in a jet",
+            "send out"
+          ],
+          null,
+          0.0019917334
+        ],
+        [
+          "开炮",
+          [
+            "fire",
+            "open fire with artillery",
+            "fire criticism"
+          ],
+          null,
+          5.3606776E-4
+        ],
+        [
+          "发",
+          [
+            "send",
+            "issue",
+            "transmit",
+            "emit",
+            "release",
+            "fire"
+          ],
+          null,
+          2.4162467E-4
+        ],
+        [
+          "燃起",
+          [
+            "fire",
+            "blaze up"
+          ],
+          null,
+          6.0145136E-5
+        ],
+        [
+          "施放",
+          [
+            "discharge",
+            "fire"
+          ],
+          null,
+          9.223555E-6
+        ],
+        [
+          "放枪",
+          [
+            "fire",
+            "loose"
+          ],
+          null,
+          5.594369E-6
+        ],
+        [
+          "点起",
+          [
+            "fire"
+          ]
+        ]
+      ],
+      "fire",
+      2
+    ]
+  ],
+  "en",
+  null,
+  null,
+  [
+    [
+      "fire",
+      null,
+      [
+        [
+          "火",
+          1000,
+          true,
+          false,
+          [
+            10,
+            8
+          ]
+        ],
+        [
+          "开火",
+          1000,
+          true,
+          false,
+          [
+            10,
+            3
+          ],
+          null,
+          [
+            [
+              3
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          4
+        ]
+      ],
+      "fire",
+      0,
+      0
+    ]
+  ],
+  0.98951507,
+  [],
+  [
+    [
+      "en"
+    ],
+    null,
+    [
+      0.98951507
+    ],
+    [
+      "en"
+    ]
+  ],
+  null,
+  null,
+  [
+    [
+      "noun",
+      [
+        [
+          [
+            "blaze",
+            "conflagration",
+            "inferno",
+            "holocaust",
+            "firestorm",
+            "flames",
+            "burning",
+            "combustion"
+          ],
+          "m_en_gbus0363890.008"
+        ],
+        [
+          [
+            "dynamism",
+            "energy",
+            "vigor",
+            "animation",
+            "vitality",
+            "vibrancy",
+            "exuberance",
+            "ebullience",
+            "zest",
+            "elan",
+            "passion",
+            "ardor",
+            "impetuosity",
+            "intensity",
+            "zeal",
+            "spirit",
+            "life",
+            "liveliness",
+            "verve",
+            "vivacity",
+            "vivaciousness",
+            "sparkle",
+            "scintillation",
+            "dash",
+            "enthusiasm",
+            "eagerness",
+            "gusto",
+            "fervor",
+            "fervency",
+            "force",
+            "potency",
+            "vehemence",
+            "inspiration",
+            "imagination",
+            "creativity",
+            "inventiveness",
+            "flair"
+          ],
+          "m_en_gbus0363890.018"
+        ],
+        [
+          [
+            "pep",
+            "vim",
+            "zing",
+            "go",
+            "get-up-and-go",
+            "oomph",
+            "pizzazz"
+          ],
+          "m_en_gbus0363890.018",
+          [
+            [
+              "informal"
+            ]
+          ]
+        ],
+        [
+          [
+            "gunfire",
+            "firing",
+            "sniping",
+            "flak",
+            "bombardment",
+            "fusillade",
+            "volley",
+            "barrage",
+            "salvo",
+            "cannonade"
+          ],
+          "m_en_gbus0363890.021"
+        ],
+        [
+          [
+            "criticism",
+            "censure",
+            "condemnation",
+            "castigation",
+            "denunciation",
+            "opprobrium",
+            "admonishments",
+            "vituperation",
+            "scolding",
+            "chiding",
+            "disapproval",
+            "hostility",
+            "antagonism",
+            "animosity",
+            "ill will",
+            "enmity"
+          ],
+          "m_en_gbus0363890.022"
+        ],
+        [
+          [
+            "flak",
+            "brickbats",
+            "knocks",
+            "raps"
+          ],
+          "m_en_gbus0363890.022",
+          [
+            [
+              "informal"
+            ]
+          ]
+        ]
+      ],
+      "fire",
+      1
+    ],
+    [
+      "verb",
+      [
+        [
+          [
+            "launch",
+            "shoot",
+            "discharge",
+            "eject",
+            "hurl",
+            "throw",
+            "send flying",
+            "let fly with",
+            "loose off",
+            "shy",
+            "send"
+          ],
+          "m_en_gbus0363890.025"
+        ],
+        [
+          [
+            "pop"
+          ],
+          "m_en_gbus0363890.025",
+          [
+            [
+              "informal"
+            ]
+          ]
+        ],
+        [
+          [
+            "shoot",
+            "discharge",
+            "let off",
+            "trigger",
+            "set off",
+            "blast",
+            "let fly with"
+          ],
+          "m_en_gbus0363890.025"
+        ],
+        [
+          [
+            "dismiss",
+            "discharge",
+            "give someone their notice",
+            "lay off",
+            "let go",
+            "throw out",
+            "get rid of",
+            "oust",
+            "depose",
+            "make redundant",
+            "cashier",
+            "sack",
+            "give the sack to",
+            "axe",
+            "kick out",
+            "boot out",
+            "give someone the boot",
+            "give someone the bullet",
+            "give someone the (old) heave-ho",
+            "give someone the push",
+            "give someone their marching orders",
+            "show someone the door",
+            "give someone their cards",
+            "give someone the elbow"
+          ],
+          "m_en_gbus0363890.036",
+          [
+            [
+              "informal"
+            ]
+          ]
+        ],
+        [
+          [
+            "ignite",
+            "start",
+            "catch",
+            "get started",
+            "get going"
+          ],
+          "m_en_gbus0363890.039"
+        ],
+        [
+          [
+            "stimulate",
+            "stir up",
+            "excite",
+            "enliven",
+            "awaken",
+            "arouse",
+            "rouse",
+            "draw/call forth",
+            "bring out",
+            "engender",
+            "evoke",
+            "inflame",
+            "put/breathe life into",
+            "animate",
+            "inspire",
+            "motivate",
+            "quicken",
+            "incite",
+            "drive",
+            "impel",
+            "spur on",
+            "galvanize",
+            "electrify",
+            "trigger",
+            "impassion"
+          ],
+          "m_en_gbus0363890.043"
+        ],
+        [
+          [
+            "stir up",
+            "arouse",
+            "rouse",
+            "excite",
+            "galvanize",
+            "electrify",
+            "stimulate",
+            "inspire",
+            "move",
+            "fire the enthusiasm of",
+            "fire the imagination of",
+            "get going",
+            "whip up",
+            "inflame",
+            "agitate",
+            "goad",
+            "provoke",
+            "spur on",
+            "urge",
+            "encourage",
+            "animate",
+            "incite",
+            "egg on",
+            "light a fire under"
+          ],
+          "m_en_gbus0363890.045",
+          [
+            [
+              "archaic"
+            ]
+          ]
+        ],
+        [
+          [
+            "inspirit"
+          ],
+          "m_en_gbus0363890.045",
+          [
+            [
+              "archaic",
+              "rare"
+            ]
+          ]
+        ]
+      ],
+      "fire",
+      2
+    ]
+  ],
+  [
+    [
+      "noun",
+      [
+        [
+          "combustion or burning, in which substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke.",
+          "m_en_gbus0363890.006",
+          "his house was destroyed by fire"
+        ],
+        [
+          "a burning sensation in the body.",
+          "m_en_gbus0363890.017",
+          "the whiskey lit a fire in the back of his throat"
+        ],
+        [
+          "the shooting of projectiles from weapons, especially bullets from guns.",
+          "m_en_gbus0363890.021",
+          "a burst of machine-gun fire"
+        ]
+      ],
+      "fire",
+      1
+    ],
+    [
+      "verb",
+      [
+        [
+          "discharge a gun or other weapon in order to explosively propel (a bullet or projectile).",
+          "m_en_gbus0363890.025",
+          "he fired a shot at the retreating prisoners"
+        ],
+        [
+          "dismiss (an employee) from a job.",
+          "m_en_gbus0363890.036",
+          "having to fire men who've been with me for years",
+          [
+            [
+              "informal"
+            ]
+          ]
+        ],
+        [
+          "supply (a furnace, engine, boiler, or power station) with fuel.",
+          "m_en_gbus0363890.038",
+          "liquefied petroleum gas can fire room heaters"
+        ],
+        [
+          "stimulate or excite (the imagination or an emotion).",
+          "m_en_gbus0363890.043",
+          "India fired my imagination"
+        ],
+        [
+          "bake or dry (pottery, bricks, etc.) in a kiln.",
+          "m_en_gbus0363890.047",
+          "methane gas is being used to fire bricks at a nearby factory"
+        ]
+      ],
+      "fire",
+      2
+    ]
+  ],
+  [
+    [
+      [
+        "the whiskey lit a \u003cb\u003efire\u003c/b\u003e in the back of his throat",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.017"
+      ],
+      [
+        "he directed his \u003cb\u003efire\u003c/b\u003e against policies promoting American capital flight",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.022"
+      ],
+      [
+        "the \u003cb\u003efire\u003c/b\u003e of their religious conviction",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.018"
+      ],
+      [
+        "a \u003cb\u003efire\u003c/b\u003e at a hotel",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.008"
+      ],
+      [
+        "our small kettle was kept constantly on the \u003cb\u003efire\u003c/b\u003e",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.011"
+      ],
+      [
+        "liquefied petroleum gas can \u003cb\u003efire\u003c/b\u003e room heaters",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.038"
+      ],
+      [
+        "having to \u003cb\u003efire\u003c/b\u003e men who've been with me for years",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.036"
+      ],
+      [
+        "his house was destroyed by \u003cb\u003efire\u003c/b\u003e",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.006"
+      ],
+      [
+        "a burst of machine-gun \u003cb\u003efire\u003c/b\u003e",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.021"
+      ],
+      [
+        "If I were to hear anyone disparage you, I would \u003cb\u003efire\u003c/b\u003e up in a flash",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.045"
+      ],
+      [
+        "a \u003cb\u003efire\u003c/b\u003e sign",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.015"
+      ],
+      [
+        "their soft smiles light the air like a star's \u003cb\u003efire\u003c/b\u003e",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.019"
+      ],
+      [
+        "methane gas is being used to \u003cb\u003efire\u003c/b\u003e bricks at a nearby factory",
+        null,
+        null,
+        null,
+        null,
+        "m_en_gbus0363890.047"
+      ]
+    ]
+  ]
+]
